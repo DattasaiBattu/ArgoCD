@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flm
+  name: bank
 spec:
   replicas: 4
   selector:
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: comt-1
-          image: shaikmustafa/paytm:bus
+          image: shaikmustafa/paytm:bank
           ports:
           - containerPort: 80
